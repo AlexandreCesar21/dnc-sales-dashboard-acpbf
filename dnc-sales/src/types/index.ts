@@ -1,4 +1,5 @@
 export * from './avatarsList'
+export * from './customTablet'
 export * from './theme'
 export * from './typographies'
 export * from './formComponent'
