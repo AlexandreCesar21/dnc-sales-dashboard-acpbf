@@ -21,7 +21,8 @@ export const StyledButton = styled.button<ButtonProps>`
             background-color: ${(props) => props.theme.buttons.primary};
         }
     }
-    
+
+   
     &.alert {
         background-color: ${(props) => props.theme.buttons.alert};
         color: ${(props) => props.theme.buttons.alertColor};
@@ -29,24 +30,32 @@ export const StyledButton = styled.button<ButtonProps>`
             background-color: ${(props) => props.theme.buttons.alertHover};
         }
     }
-
-    &.borderless-alert {
-        background-color: none;
-        color: ${(props) => props.theme.buttons.alert};
-        height: 0;
-        padding: 0;
-        &:hover {
-            color: ${(props) => props.theme.buttons.alertHover};
+        &.borderless-alert {
+            background-color: none;
+            color: ${(props) => props.theme.buttons.alert};
+            height: 0;
+            padding: 0;
+            &:hover {
+                color: ${(props) => props.theme.buttons.alertHover};
+            }
         }
-    }
     
-    &:disabled {
-        background-color: ${(props) => props.theme.buttons.disabled};
-        color: ${(props) => props.theme.buttons.disabledColor};
-        cursor: not-allowed;
-        &:hover {
+        &:disabled {
             background-color: ${(props) => props.theme.buttons.disabled};
             color: ${(props) => props.theme.buttons.disabledColor};
+            cursor: not-allowed;
+            &:hover {
+                background-color: ${(props) => props.theme.buttons.disabled};
+                color: ${(props) => props.theme.buttons.disabledColor};
+            }
         }
-    }
-`
+    `
+    
+    
+    
+    /*
+    
+    
+    
+*/
+

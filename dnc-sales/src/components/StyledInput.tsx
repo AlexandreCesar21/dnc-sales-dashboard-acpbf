@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { InputProps } from '@/types'
 import { pxToRem } from '@/utils'
 
-export const StyledInput = styled.input<InputProps>`
+export const StyledInput = styled.input<InputProps>`    
     background-color: ${(props) => props.theme.textInput.active};
     color: ${(props) => props.theme.textInput.activeColor};
     border-radius: ${pxToRem(8)};
